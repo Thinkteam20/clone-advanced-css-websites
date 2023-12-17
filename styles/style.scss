@@ -44,22 +44,36 @@ body {
     display: none;
 }
 
-
-// .header__list-item {
-//     white-space: nowrap; /* Prevents items from wrapping to the next line */
-//     padding: 12px;
-//     border-radius: 50px;
-//     background-color: green;
-//     color: white;
-// }
-
 // // main cards
-// .cards {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     gap: 10px;
-//     background-color: #ffffff;
-// }
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    margin: 20px 0;
+
+    .cards__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 10px;
+        border-radius: 16px;
+        background-color: white;
+        .card__title{
+            font-size: 24px;
+        }
+        .card__footer{
+            font-size: 12px;
+        }
+
+        &:first-child {
+            
+        }
+
+        &:nth-child(3n){
+            grid-column: span 2;
+        }
+    }
+}
 
 // .cards__card {
 //     height: 140px;
