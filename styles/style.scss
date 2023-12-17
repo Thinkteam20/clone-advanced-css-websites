@@ -1,0 +1,132 @@
+@import "./reset.scss";
+
+body {
+    background-color: #dce6d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.phone {
+    background-color: black;
+    border-radius: 50px;
+    height: 95%;
+    width: 420px;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    overflow-x: scroll;
+    
+    .header__list {
+        display: flex;
+        color: white;
+        gap: 10px;
+        width: max-content;
+
+        .header__list-item{
+            border: 1px solid rgba($color: #fff, $alpha: 0.5);
+            padding: 10px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+        .header__list-item--inverted {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+// Hide the scroll bar 💡
+.header::-webkit-scrollbar {
+    display: none;
+}
+
+
+// .header__list-item {
+//     white-space: nowrap; /* Prevents items from wrapping to the next line */
+//     padding: 12px;
+//     border-radius: 50px;
+//     background-color: green;
+//     color: white;
+// }
+
+// // main cards
+// .cards {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     gap: 10px;
+//     background-color: #ffffff;
+// }
+
+// .cards__card {
+//     height: 140px;
+//     padding: 12px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     border-radius: 20px;
+//     outline: 2px solid black;
+// }
+
+// .card__title{
+//     font-size: 24px;    
+// }
+
+// .card__footer{
+//     background-color: yellow;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// .price{
+//     padding: 8px;
+//     font-size: 20px;
+//     border-radius: 50px;
+//     outline: 1px solid black;
+// }
+
+// .length{
+//     width: 24px;
+//     height: 24px;
+//     border-radius: 20%;
+//     outline: 1px solid black;
+// }
+
+// .cards__card:nth-child(1){
+//     background-color: black;
+//     color: grey;
+//     padding: 10px;
+// }
+
+// .cards__card:nth-child(3){
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: greenyellow;
+//     // grid-column-start: 1;
+//     // grid-column-end: 3;
+//     grid-column: 1 / span 2;
+// }
+
+// .cards__card:nth-child(6){
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: coral;
+//     grid-column: 1 / span 2;
+// }
+
+
+// // responsive 
+// @media screen and (max-width: 768px) {
+//     .cards {
+//       grid-template-columns: 1fr; /* Switch to a single column on smaller screens */
+//       max-width: 100%;
+//     }
+  
+//     /* Add any additional responsive styling as needed */
+//   }
