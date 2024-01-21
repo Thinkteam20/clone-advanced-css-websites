@@ -1,99 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/style.scss">
-  <title>Vite App 2</title>
+  <title>Document</title>
 </head>
 
 <body>
-  <div class="phone">
-    
-    <!-- header -->
-    <div class="header">
-      <span class="header__btn">👈🏻</span>
-      <h1 class="header__title">My Cart</h1>
-      <span class="header__btn">🛒</span>
+  <div class="wrapper">
+    <div class="grid">
+
+      <!-- HEADER -->
+      <div class="grid__col">
+        <header class="header">
+          <div class="header__top">
+            <span class="header__reviews">4.98</span>
+            <span class="header__label">Best reviews</span>
+          </div>
+          <h1 class="header__title">Grid</h1>
+          <h3 class="header__subtitle">Css Grid is awesome and we love it because it does many things</h3>
+        </header>
+        
+        <div class="grid__img"></div>
+        <div class="grid__img"></div>
+      </div>
+      
+      <div class="grid__col">
+          <div class="subgrid">
+            <div class="grid__img"></div>
+            <nav class="navigation">
+              <ul>
+                <li class="nav__item">About</li>
+                <li class="nav__item">Solution</li>
+                <li class="nav__item">Portfolio</li>
+                <li class="nav__item">Blog</li>
+              </ul>
+              <span class="vab__cta">Hire Us</span>
+            </nav>
+            <div class="grid-cells">
+              <div class="grid__cell">
+                <span>
+                  Recent collects
+                </span>
+              </div>
+              <div class="grid__cell">
+                <span>
+                  Recent collects
+                </span>
+              </div>
+            </div>
+           
+      
+              <div class="grid__img"></div>
+          </div>
+
+          <div class="blog-post">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum ut mollitia reiciendis, quasi
+              animi similique iste autem illo, nulla distinctio numquam eveniet odit nobis quo optio et tempore vel.</p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- total -->
-    <section class="total">
-      <span class="total__price">$3550</span>
-      <span class="total__subtitle">based on your 5 items.</span>
-    </section>
-
-    <!-- Items -->
-    <section class="items">
-      <article class="item">
-        <div class="item__info">
-          <div class="item__info-col">
-            <h2 class="item__title">
-              Pop Temple Print T-Shirt
-            </h2>
-            <h3 class="item__subtitle">
-              limited 2002
-            </h3>
-          </div>
-          <div class="item__info-col">
-            <span class="item__total-price">
-              $1990
-            </span>
-            <div class="item__piece-price">
-              $995 per piece
-            </div>
-          </div>
-        </div>
-        <div class="item__specs">
-          <div class="spec">
-            <span class="spec__title">Size</span>
-            <div class="spec__value">48 - L</div>
-          </div>
-          <div class="spec">
-            <span class="spec__title">QT</span>
-            <div class="spec__value">2 pcs</div>
-          </div>
-        </div>
-        <img src="https://source.unsplash.com/random" class="item__photo" />
-      </article>
-
-      <!-- Item 2 -->
-      <article class="item">
-        <div class="item__info">
-          <div class="item__info-col">
-            <h2 class="item__title">
-              Pop Temple Print T-Shirt
-            </h2>
-            <h3 class="item__subtitle">
-              limited 2002
-            </h3>
-          </div>
-          <div class="item__info-col">
-            <span class="item__total-price">
-              $1990
-            </span>
-            <div class="item__piece-price">
-              $995 per piece
-            </div>
-          </div>
-        </div>
-
-        <!-- specs -->
-        <div class="item__specs">
-          <div class="spec">
-            <span class="spec__title">Size</span>
-            <div class="spec__value">48 - L</div>
-          </div>
-          <div class="spec">
-            <span class="spec__title">QT</span>
-            <div class="spec__value">2 pcs</div>
-          </div>
-        </div>
-        <img src="https://source.unsplash.com/random" class="item__photo" />
-      </article>
-    </section>
-
   </div>
 </body>
 
